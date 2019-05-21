@@ -1,7 +1,7 @@
 # next-object-url
 > URL create/destroy for blob object
 
-## install
+## installation
 ```bash
 npm install -S afeiship/next-object-url --registry=https://registry.npm.taobao.org
 ```
