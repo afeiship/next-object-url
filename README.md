@@ -35,7 +35,7 @@ res.destroy()
   fileEl.onchange = function(e) {
     var file = e.target.files[0];
     var res = nx.ObjectUrl.create(file);
-    console.log(file, img1);
+    // console.log(file, img1);
     img1.src = res.url;
     img1.onload = function() {
       res.destroy();
