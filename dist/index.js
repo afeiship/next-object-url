@@ -3,7 +3,7 @@
  * description: URL create/destroy for blob object.
  * homepage: https://github.com/afeiship/next-object-url
  * version: 1.0.0
- * date: 2021-03-04 13:45:13
+ * date: 2021-03-04 13:49:39
  * license: MIT
  */
 
