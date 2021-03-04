@@ -1,9 +1,14 @@
 # next-object-url
-> URL create/destroy for blob object
+> URL create/destroy for blob object.
+
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
 ## installation
 ```bash
-npm install -S afeiship/next-object-url --registry=https://registry.npm.taobao.org
+npm install -S @jswork/next-object-url
 ```
 
 ## apis
@@ -13,7 +18,7 @@ npm install -S afeiship/next-object-url --registry=https://registry.npm.taobao.o
 
 ## usage
 ```js
-import NxObjectUrl from 'next-object-url';
+import NxObjectUrl from '@jswork/next-object-url';
 
 const res = NxObjectUrl.create(obj,options);
 
@@ -22,7 +27,7 @@ res.url
 // method
 res.destroy()
 ```
-## demo
+
 ```html
 <input type="file" name="test" id="test1" />
 <img id="img1" src="https://via.placeholder.com/200x100" />
@@ -43,3 +48,18 @@ res.destroy()
   };
 </script>
 ```
+
+## license
+Code released under [the MIT license](https://github.com/afeiship/next-object-url/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@jswork/next-object-url
+[version-url]: https://npmjs.org/package/@jswork/next-object-url
+
+[license-image]: https://img.shields.io/npm/l/@jswork/next-object-url
+[license-url]: https://github.com/afeiship/next-object-url/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-object-url
+[size-url]: https://github.com/afeiship/next-object-url/blob/master/dist/next-object-url.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-object-url
+[download-url]: https://www.npmjs.com/package/@jswork/next-object-url
