@@ -1,4 +1,4 @@
-(function() {
+(function () {
   var global = typeof window !== 'undefined' ? window : this || Function('return this')();
   var nx = global.nx || require('@jswork/next');
   var GLOBAL_URL = global.URL || global.webkitURL;
@@ -15,6 +15,11 @@
             return revokeObjectURL(url);
           }
         };
+      },
+      destroy: function (inArray) {
+        inArray.forEach(function (url) {
+          revokeObjectURL(url);
+        });
       }
     }
   });

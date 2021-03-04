@@ -12,9 +12,10 @@ npm install -S @jswork/next-object-url
 ```
 
 ## apis
-| api    | params           | description                |
-| ------ | ---------------- | -------------------------- |
-| create | (object,options) | window.URL.CreateObjectURL |
+| api     | params           | description                |
+| ------- | ---------------- | -------------------------- |
+| create  | (object,options) | window.URL.createObjectURL |
+| destroy | (array)          | window.URL.revokeObjectURL |
 
 ## usage
 ```js
