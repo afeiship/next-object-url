@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-object-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "URL create/destroy for blob object.",
   "homepage": "https://github.com/afeiship/next-object-url",
   "author": {

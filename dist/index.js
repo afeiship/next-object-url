@@ -2,12 +2,12 @@
  * name: @jswork/next-object-url
  * description: URL create/destroy for blob object.
  * homepage: https://github.com/afeiship/next-object-url
- * version: 1.0.0
- * date: 2021-03-04 13:49:39
+ * version: 1.0.1
+ * date: 2021-03-04 14:00:40
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = typeof window !== 'undefined' ? window : this || Function('return this')();
   var nx = global.nx || require('@jswork/next');
   var GLOBAL_URL = global.URL || global.webkitURL;
@@ -24,6 +24,11 @@
             return revokeObjectURL(url);
           }
         };
+      },
+      destroy: function (inArray) {
+        inArray.forEach(function (url) {
+          revokeObjectURL(url);
+        });
       }
     }
   });
